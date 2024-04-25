@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="Images/app-development.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="left_side">
+        <img src="images/logo.svg" alt="">
+        <ul>
+          <li>
+            <span>Features</span>
+            <img class="dropnum1" src="images/icon-arrow-down.svg" alt="" id="droponeShow">
+          </li>
+          <li>
+            <span>Company</span>
+            <img class="dropnum2" src="images/icon-arrow-down.svg" alt="" id="droptwoShow">
+          </li>
+          <li><span>Careers</span></li>
+          <li><span>About</span></li>
+        </ul>
+      </div>
+      <div class="right_side">
+        <div class="buttons">
+          <button class="btn login">Login</button>
+          <button class="btn Sign">Rigester</button>
+        </div>
+        <i class="fa-solid fa-bars" id="bars"></i>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="txt_content">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.</p>
+          <button>Learn More</button>
+        <div class="owners">
+          <img src="images/client-databiz.svg" alt="">
+          <img src="images/client-audiophile.svg" alt="">
+          <img src="images/client-meet.svg" alt="">
+          <img src="images/client-maker.svg" alt="">
+        </div>
+      </div>
+      <div class="img_content">
+        <img src="images/image-hero-desktop.png" alt="">
+      </div>
+    </div>
+    <div class="right_section_nav none" id="menuLeft">
+      <nav>
+        <i class="fa-solid fa-xmark icon" id="close"></i>
+        <div class="left_side_nav_small">
+          <ul>
+            <li>
+              <div class="identifer">
+                <span>Features</span>
+                <img class="dropnum1" src="images/icon-arrow-down.svg" id="openfeatures" alt="">
+              </div>
+              <ul class="options none" id="features">
+                <li class="">
+                  <span>Todo List</span>
+                  <img src="images/icon-todo.svg" alt="">
+                </li>
+                <li>
+                  <span>Calender</span>
+                  <img src="images/icon-calendar.svg" alt="">
+                </li>
+                <li>
+                  <span>Reminders</span>
+                  <img src="images/icon-reminders.svg" alt="">
+                </li>
+                <li>
+                  <span>Planning</span>
+                  <img src="images/icon-planning.svg" alt="">
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div class="identifer">
+                <span>Company</span>
+                <img class="dropnum2" src="images/icon-arrow-down.svg" id="opencompany" alt="">
+              </div>
+              <ul class="options none" id="company">
+                <li class="">
+                  <span>History</span>
+                </li>
+                <li>
+                  <span>Our Team</span>
+                </li>
+                <li>
+                  <span>Reminders</span>
+                </li>
+              </ul>
+            </li>
+            <li><span>Careers</span></li>
+            <li><span>About</span></li>
+          </ul>
+          <div class="buttons">
+            <button class="btn login">Login</button>
+            <button class="btn Sign">Rigester</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="dropdown_one none" id="dropOne">
+      <ul class="options">
+        <li class="">
+          <img src="images/icon-todo.svg" alt="">
+          <span>Todo List</span>
+        </li>
+        <li>
+          <img src="images/icon-calendar.svg" alt="">
+          <span>Calender</span>
+        </li>
+        <li>
+          <img src="images/icon-reminders.svg" alt="">
+          <span>Reminders</span>
+        </li>
+        <li>
+          <img src="images/icon-planning.svg" alt="">
+          <span>Planning</span>
+        </li>
+      </ul>
+    </div>
+    <div class="dropdown_one Two none" id="dropTwo">
+      <ul class="options">
+        <li class="">
+          <span>History</span>
+        </li>
+        <li>
+          <span>Our Team</span>
+        </li>
+        <li>
+          <span>Reminders</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>
